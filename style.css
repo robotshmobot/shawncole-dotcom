@@ -4,8 +4,9 @@ body {
     background-color: #FFB826;
     font-family: 'Archivo', sans-serif;
     font-weight: 400;
+    text-transform: uppercase;
     color: #000000;
-    font-size: 17px;
+    font-size: 16px;
     line-height: 24px;
     text-align: left;
     display: flex;
@@ -13,12 +14,71 @@ body {
 }
 
 h1 {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 17px;
 }
 
 p {
-    margin: 0;
+    margin: 0 0 25px 0;
+}
+
+a {
+    color: #000000;
+}
+
+.navbar-container {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-block {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    margin: 0 25px;
+}
+
+.navbar-block a {
+    text-decoration: none;
+}
+
+.navbar-block a hover {
+    text-decoration: underline;
+}
+
+.nav-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.page-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    height: 100%;
+    margin-top: 60px;
+}
+
+#main-content {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 3;
 }
